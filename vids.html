@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <meta charset="UTF-8">
+        <script src="https://use.fontawesome.com/d1341f9b7a.js"></script>
+        <title>KEME</title>
+        <style>
+          body{
+          margin: 0;
+          background-color:  linear-gradient(to right,#ffcc00, green, #520000);
+          position: fixed;
+          } 
+.header{
+    width: 3000px;
+    height: 250px;
+    margin:auto;
+    padding-left: 0%;
+    padding-left: 0%;
+    padding-top: 0%;
+    padding-bottom:0% ;
+}
+.nav{
+    width: 3000px;
+    background-color: #520000;
+    margin:auto;
+    overflow: auto;
+    height:80px;
+}
+ul{
+    margin: 0;
+    padding: 5px;
+    list-style: none;
+}
+li{
+    float: left;
+}
+ a{
+    color:#ffcc00;
+    width: 125px;
+    text-decoration: none;
+    display: block ;
+    padding: 15px;
+    text-transform: uppercase;
+    font-size: 30px;
+    transition: 0.3s;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.nav ul li a:hover{
+    color:whitesmoke;
+    transition: 0.25px;
+}
+.nav img{
+    padding: 15px;
+}
+.sub-menu-wrap{ 
+              padding-top: 0%;
+              position: absolute;
+              top: 13%;
+              left: 3%;
+              width: 320px;
+              max-height: 10px;
+              overflow: hidden;
+              transition: max-height 0.7;
+        }
+        .sub-menu-wrap.open-menu{
+            max-height: 535px;
+        }
+        .sub-menu{
+         background:  rgba(0, 0, 0, 0.3);
+        padding: 20px;
+        margin: 10px;
+        border-radius: 10%;
+        }
+        .user-info{
+            display: flex;
+            align-items: center;
+        }
+        .user-info h2{
+            font-weight: 500px;
+            color: whitesmoke;
+        }
+        .user-info img{
+            width: 60px;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+        .sub-menu hr{
+            border: 0;
+            height: 1px;
+            width: 100%;
+            background: #520000;
+            margin:15px 0 10px;
+        }
+        .sub-menu-link{
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: #ffcc00;
+        margin: 12px 0;
+    }
+    .sub-menu-link p{
+        width: 100%;
+    }
+    .sub-menu-link img{
+        width: 40px;
+        background: #e5e5e5;
+        border-radius: 50%;
+        padding: 8px;
+        margin-right: 15px;
+    }
+    .sub-menu-link span{
+        font-size: 22px;
+        transition: transform 0.5s;
+    }
+   .sub-menu-link :hover p{
+        font-weight: 600px;
+}
+    .sub-menu-link:hover p{
+        transform: translateX(10px);
+    }
+    .sub-menu-link:hover span{
+        transform: translateX(10px);
+    }
+    footer{
+            width: 100%;
+            bottom: 0px;
+            background-color: #520000;
+            color:#ffcc00;
+            position: absolute;
+            padding-top: 32px;
+            padding-bottom: 35px;
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+            font-family: 'Times New Roman', Times, serif;
+            position: fixed;
+    }
+.vids {
+    background:  linear-gradient(to right, #ffcc00, green, #520000);
+    width:100%;
+    float: left;
+    padding-top: 0%;
+    padding-bottom: 20%;
+    text-align:center;
+    font-family: 'Courier New', Courier, monospace;
+    color: linear-gradient(to right, #ffcc00, #520000);
+    font-size: 27px;
+    font-weight: bold;
+    text-shadow: 5px;
+}
+.aburido{
+    top: 5%;
+    padding-top: 3%;
+    align-items: center;
+    padding-bottom: 2px;
+}
+.vids.vidyow{
+    padding-bottom:18% ;
+    padding-left: 29%;
+    height: 300px;
+}
+.Hi{
+    background:  linear-gradient(to right,#ffcc00, green, #520000);
+    width:76%;
+    float: left;
+    padding-top: 0%;
+    padding-bottom: 37.5% ;
+    text-align:center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ }
+ .Hi footer{
+            width: 76%;
+            bottom: 0px;
+            background-color: #520000;
+            color:#ffcc00;
+            position: absolute;
+            padding-top: 32px;
+            padding-bottom: 35px;
+            text-align: center;
+            font-size: 30px;
+            font-weight: bold;
+            font-family: 'Times New Roman', Times, serif;
+            position: fixed;
+        }
+        .Hello{
+    background-color:rgb(5, 84, 5);
+    width: 23%;
+    float:left;
+    padding-top: 0%;
+    padding-bottom: 1%;
+    text-align: center;
+    font-family: sans-serif;
+    color:whitesmoke;
+    font-weight: bold;
+    font-size: 20px;
+ }
+ .Hello p{
+  font-family: cursive;
+  font-size: 20px;
+  background: -webkit-linear-gradient(#fff700, #520000);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent;
+
+ }
+ .Hello h1{
+    background: -webkit-linear-gradient(#fff700, #520000);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent;
+ }
+ .Hello p{
+  font-size: 30px;
+ }
+ .Hello a{
+            padding-top: 40%;
+            width: 100px;
+            height: 5px;
+            align-items: center;
+            padding-left: 15%;
+            padding-right: 10px;
+        }
+        .Hello a{
+            width: 60px;
+            height: 11%;
+            padding-top: 0%;
+            padding-left: 40%;
+            align-items: center;
+        }
+        .CCS{
+            font-size: 30px;
+            width: 200px;
+            padding-left: 3%;
+            font-size: 30px;
+            padding-bottom: 20%;
+          
+        }
+        .css p{
+            padding-bottom:6%;
+            font-size: 40px;
+        }
+        .ispsc p{
+            padding-right: 16%;
+            font-size: 30px;
+        }
+        </style>
+    </head>
+    <body>
+          <div class="header">
+            <img src="imgs/banners.png" width="3000px" height="239px" >
+          </div>
+           
+          <div class="nav">
+            <ul>
+                <li><a href="Home.html">HOME</a></li>
+                <li><a href="#" onclick="toggleMenu()">PROFILE</a></li>
+                <div class="sub-menu-wrap" id="subMenu">
+                    <div class="sub-menu">
+                        <div class="user-info">
+                            <img src="imgs/me3png.png">
+                            <h2>HERYN</h2>
+                        </div>
+                        <hr>
+                        <a href="info.html" class="sub-menu-link">
+                            <img src="imgs/info.jpg">
+                            <p>Info</p>
+                            <span>></span>
+                        </a>
+                        <a href="pictures.html" class="sub-menu-link">
+                            <img src="imgs/image.png">
+                            <p>Images</p>
+                            <span>></span>
+                        </a>
+                        <a href="vids.html" class="sub-menu-link">
+                            <img src="imgs/vids.png">
+                            <p>Videos</p>
+                            <span>></span>
+                        </a>
+                    </div>
+                    </div>  
+                <li><a href="About.html">ABOUT</a></li>
+            </ul>
+          </div>
+
+          <div class="Hi">
+            <footer> &copy;All Rights Reserved 2023</footer>
+         <div class="vids">
+                <div class="aburido">
+               <video controls autoplay >
+                <source src="imgs/ako.mp4" type="video/mp4" >
+               </video>
+                </div>
+              <div class="vidyow">
+               <video controls>
+                <source src="imgs/aburido.mp4" type="video/mp4">
+               </video>
+              </div>
+              </div>
+        </div>
+          
+        <div class="Hello">
+            <h1>NEWS</h1>
+            <img src="imgs/NEWS.jpg" width="300px" height="320px" onclick="toggleMenu()">
+            <img src="imgs/Teach.jpg" width="300px" height="320px">
+            <p><i>Teacher's Month Celebration</i></p>
+            <p>ISPSC STA. MARIA CAMPUS</p>  
+
+                <a href="https://ispsc.edu.ph"><img src="imgs/UIPLOGO.jpg" alt="logo" height="200px"></a> <p class="ispsc"></p>
+               <a href="https://facebook.com/CCSISPSCOfficial"> <img src="imgs/CCSLOGO.png" height="200px" class="CCS"></a> <p class="css"></p>
+        </div>
+            
+          <script>
+            let subMenu = document.getElementById("subMenu");
+
+            function toggleMenu(){
+                subMenu.classList.toggle("open-menu");
+            }
+           </script>
+          
+    </body>
+</html>
